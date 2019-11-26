@@ -14,28 +14,59 @@
 </head>
 
 <body>
-    <nav data-module="nav">
-        <!-- nav elements must have nav-item -->
-        <ul>
-            <li><a href="#" class="nav-item">Home</a></li>
-            <li><a href="/2" class="nav-item">Work</a></li>
-            <li><a href="/3" class="nav-item">Contact me</a></li>
-        </ul>
-    </nav>
+    <div id="headerCon">
+        <div id="mainlogo">
+            <a href="index.hbs"></a>
+            <img src="images/whitelogo.png" alt="Logo">
+        </div>
+
+    <nav id="mainNav" data-module="nav">
+     <h2 class="hidden">Main navigation</h2>
+     <button id="button"></button>
+     <div id="burgerCon">
+       <ul id="burgerMenu">
+        <li><a href="#" class="nav-item">Home</a></li>
+        <li><a href="/2" class="nav-item">Work</a></li>
+        <li><a href="/3" class="nav-item">Contact</a></li>
+       </ul>
+     </div>
+   </nav>
+    
+    </div>
 
     <main>
         {{{ body }}}
     </main>
 
     <footer>
-        <ul>
-            <li><a href="#" class="nav-item">Home</a></li>
-            <li><a href="/2" class="nav-item">About</a></li>
-           <li><a href="/3" class="nav-item">Contact me</a></li>
-        </ul>
-    </footer>
+        <section class="socialMedia">
+            <h2 class="hidden">Social Media</h2>
+            <a href="http:github.com/tien-149" target="_blank">
+            <img class="socialIcon" src="images/github-icon.png" alt="Github icon" width="30" height="30">
+            </a>
 
-    <a id="to-top" href="#" class="nav-item">Back to top</a>
+            <a href="http:instagram/rjta.ct" target="_blank">
+            <img class="socialIcon" src="images/insta-icon.png" alt="Instagram icon" width="30" height="30">
+            </a>
+
+            <a href="http:behance.com" target="_blank">
+            <img class="socialIcon" src="images/facebook-icon.png" alt="Behance icon" width="30" height="30">
+            </a>
+        </section>
+       <section class="footerNavCon">
+		<nav class="footerNav">
+			<h2 class="hidden">Footer Navigation</h2>
+				<ul>
+					<li><a href="#" class="nav-item">Home</a></li>
+                     <li><a href="/2" class="nav-item">Work</a></li>
+                     <li><a href="/3" class="nav-item">Contact</a></li>
+				</ul>
+		</nav>
+		</section>
+        <p id="copyright">© 2019 Tien Le. All rights reserved.</p>
+    </footer>
+{{!-- 
+    <a id="to-top" href="#" class="nav-item">Back to top</a> --}}
 
     <script type="module" src="js/main.js"></script>
 
