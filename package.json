@@ -4,7 +4,7 @@
   "description": "My portfolio page",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
