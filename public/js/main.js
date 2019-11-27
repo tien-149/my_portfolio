@@ -1,6 +1,6 @@
 //This is where we build WORK page
 (function() {
-	console.log("JavaScrip is linked up");
+	
 
 	var button = document.querySelector("#button");
 	var burgerCon = document.querySelector("#burgerCon");
