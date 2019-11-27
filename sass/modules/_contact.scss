@@ -1,4 +1,81 @@
+h1{
+    font-family: $main-font;
+    text-align: center;
+    color:$main-color;
+    margin-top:70px;
+}
 #contactCon{
     display: flex;
     flex-direction: column;
+    margin:20px;
+
+    input{
+        border:none;
+        background-color:#f2f8f4;
+        border-bottom: 0.2px solid $main-color;
+        font-family: $main-font, Arial, Helvetica, sans-serif;
+        padding:10px;
+        color: #635d03;
+    }
+    .contact-text{
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        color: $main-color;
+        font-size: 16px;
+        padding:25px;
+
+        #email{
+            padding:15px;
+        }
+        #name{
+            padding:15px;    
+        }
+        #message{
+            padding:15px;
+        }
+        textarea{
+            border:none;
+            background-color:#f2f8f4;
+            border-bottom: 0.2px solid $main-color;
+            font-family: $main-font, Arial, Helvetica, sans-serif;
+            padding:10px;
+            color: #635d03;
+        }
+
+    }
+    ::placeholder{color:#a5c2af;}
+    button{
+        display: flex;
+        background-color: #f2f8f4;
+        border-radius: 5px;
+        border: 1px solid $main-color;
+        color:$main-color;
+        padding:12px;
+        text-align: center;
+        font-family: $main-font;
+        font-size:15px;
+        justify-content: center;
+        margin: 30px;
+    }
+    
+}
+
+//////Desktop Version//////
+@media screen and (min-width: 1024px){
+    #contactCon{
+        width:550px;
+        margin-top:80px;
+        margin-bottom:90px;
+        margin-left:60px;
+
+        .contact-text{
+            font-size:20px;
+            padding:30px;
+        }
+        button{
+            font-size:18px;
+        }
+    }
+    
 }
