@@ -19,7 +19,7 @@ router.get("/contact", (req, res) => {
 router.get('/work', (req, res) => {
     console.log('at the main route');
 
-    let query = "SELECT ID, Project, Role, Detail, Link FROM tbl_work";
+    let query = "SELECT * FROM tbl_work";
 
 
     sql.query(query, (err, result) => {

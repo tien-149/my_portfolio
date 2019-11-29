@@ -1,0 +1,25 @@
+
+
+#project{
+    
+    .work-panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    h2{
+        font-family: $main-font;
+        
+    }
+    h3{
+        font-family: $main-font;
+        color: white;
+        font-size:14px;
+    }
+    p{
+        font-family: $main-font;
+        font-size:13px;
+    }
+}

@@ -4,12 +4,14 @@
         <!-- loop through all our team members and put their info on the page -->
         {{#each work}} 
         {{!-- This is like a JS for Each loop --}}
-        <div class="user-panel"> 
-            <h2>{{Project}}</h2>
-            <h3>{{Role}}</h3>
-            <h4>{{Detail}}</h4>
-            <h4>{{Link}}</h4>
-            <a href="{{ID}}" class ="u-link"> See more</a>    
+        <div class="work-panel"> 
+            <img src="images/{{background}}" alt="background image" id="work-background">
+            <h2 id="project-name">{{Project}}</h2>
+            <h3 id="my-role">{{Role}}</h3>
+            <p id="project-detail">{{Detail}}</p>
+            
+            
+            <a href="{{Link}}" class ="u-link"> See more on Behance</a>    
         </div>
 
         {{/each}}
