@@ -1,9 +1,9 @@
 const config = {
-    host: "localhost",
-    port: 8889, // 8889 for mac
-    uname: "root",
-    pword: "root", // leave blank for windows
-    database: "db_portfolio"
+    host: "localhcleardb.netst",
+    // port: 8889, // 8889 for mac
+    uname: "b6f6967263d264",
+    pword: "3169b54a", // leave blank for windows
+    database: "heroku_c600e604ec49fdf"
 }
 
 module.exports = config;
