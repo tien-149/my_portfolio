@@ -10,7 +10,7 @@ This is the Docker environment set up for PHP contact form
 #### Set up
 1. Clone the repo
    ```
-   git clone git@github.com:spiderPan/Fanshawe-IDP-Inclass.git
+   git clone https://github.com/tien-149/my_portfolio.git
    ```
 2. Open the folder and run docker-compose
    ```
@@ -23,5 +23,5 @@ This is the Docker environment set up for PHP contact form
    ```
 
 #### URLs
-1. Your project is up in `http://localhost:8080` which is mapping to the `php_contact_form` folder
+1. Your project is up in `http://localhost:8080` which is mapping to the `php` folder
 2. The Mailhog is in `http://localhost:8025`
