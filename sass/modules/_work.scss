@@ -1,6 +1,55 @@
 
+#work-green{
+    display:flex;
+    height:300px;
+    background-color:$main-color;
+    justify-content: center;
 
+    h1{
+        color:$mainfont-color;
+    }
+}
+.hero-work{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    img{
+        width:70px;
+        margin-bottom:50px;
+        justify-content: center;
+        position: absolute;
+        top:400px;
+        left:40%;
+    }
+    #intro-work{
+        margin:0 auto;
+        text-align: center;
+        height:100px;
+        padding-bottom:50px;
+        padding-top:100px;
+        h5{
+            font-family: $main-font;
+            color:$main-color;
+        }
+    }
+
+}
+// #pencil{
+//     width:80px;
+//     height:80px;
+//     position: absolute;
+// }
 #project{
+//    background: url("../images/cool-background.png");
+#gradient
+{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
     
     .each-project{
         display:flex;
@@ -8,10 +57,11 @@
         position: relative;
         justify-content: center;
         text-align: center;
+        
     img{
         width:100%;
         height: auto;
-        z-index:-1;
+        z-index:1;
 
     }
   
@@ -20,42 +70,48 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-       position: relative;
+        z-index: 1;
+    //    position: absolute;
 
 
     }
     h2{
         font-family: $main-font;
-        vertical-align: middle;
-        position: absolute;
-        bottom:170px;
-        left: 30%;
-        margin-left: -35px;
+        position: relative;
+        font-size:20px;
+        bottom:100px;
+        // bottom:120px;
+        // left: 23%;
+        // margin-left: -35px;
+        // padding:10px;
     }
     h3{
         font-family: $main-font;
         color: white;
         font-size:14px;
-        position: absolute;
-        bottom:140px;
-        left: 50%;
-        margin-left: -50px;
+        position: relative;
+        
+        bottom:120px;
+        // left: 50%;
+        // margin-left: -50px;
     }
     p{
+        display:none;
         font-family: $main-font;
-        font-size:13px;
+        font-size:12px;
         position: absolute;
-        bottom: 50px;
+        bottom: 10px;
         padding:20px;
     }
     .seemore-button{
         font-family: $main-font;
-        background-color: pink;
-        width:100px;
-        height:30px;
+        font-size:12px;
+        border:1px solid white;
+        width:80px;
+        height:20px;
         justify-content: center;
-        position: absolute;
-        bottom: 30px;
+        position: relative;
+        bottom: 130px;
         left: 50%;
         margin-left: -50px;
         
