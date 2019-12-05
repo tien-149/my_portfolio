@@ -1,5 +1,5 @@
 //This is where we build WORK page
-gsap.from("#work-background", {duration:1.5, opacity:0, y:300, stagger: 1.25, ease: "back"});
+// gsap.from("#work-background", {duration:1.5, opacity:0, y:300, stagger: 1.25, ease: "back"});
 var colors = new Array(
 	[62,35,255],
 	[60,255,60],
