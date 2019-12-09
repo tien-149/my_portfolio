@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 const sql = require('../utils/sql');
+const connect = require('../utils/sqlConnect');
+
 
 router.get("/", (req, res) => {
   console.log("main route");
@@ -16,35 +18,41 @@ router.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-router.get('/work', (req, res) => {
-    console.log('at the main route');
-
-    let query = "SELECT * FROM tbl_work";
-
-
-    sql.query(query, (err, result) => {
-        if (err) { throw err; console.log(err); }
-
-        res.render('work', { work: result }); //we can change the key but we had to keep the result
-    })
-})
-
-// router.get('/users/:id', (req, res) => {
+// router.get('/work', (req, res) => {
 //     console.log('at the main route');
-//     console.log(req.params.id); //1 2 3 or whatever comes after the slach
 
-//     let query = `select * from tbl_work where ID="${req.params.id}"`;
+//     let query = "SELECT * FROM tbl_work";
 
 
 //     sql.query(query, (err, result) => {
 //         if (err) { throw err; console.log(err); }
 
-//         console.log(result); 
-//         console.log("after trim/conversion:", result[0]);
-//         //remder the home view with dynamic data
-//         res.json(result[0]);
-
+//         res.render('work', { work: result }); //we can change the key but we had to keep the result
 //     })
 // })
+
+router.get('/work', (req, res) => {
+
+  // get the connection via the connection pool, and then run the query -> just one added step
+  connect.getConnection((err, connection) => {
+  if (err) { return console.log(error.message); }
+
+  let query = "SELECT * FROM tbl_work";
+
+  connect.query(query, (err, rows) => {
+    connection.release(); // send this connection back to the pool
+
+    if (err) {
+      // will exit the function and log the error
+      return console.log(err.message);
+    }
+
+    console.log(rows); // this should be your database query result
+
+    // render our page
+    res.render('work', {data: rows}); // whatever page and data you're rendering
+  });
+});
+})
 
 module.exports = router;
