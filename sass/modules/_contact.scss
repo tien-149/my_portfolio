@@ -1,3 +1,8 @@
+.contact-page{
+    display:flex;
+
+}
+
 h1{
     font-family: $main-font;
     text-align: center;
@@ -60,7 +65,11 @@ h1{
     }
     
 }
-
+#contact-page-img{
+    img{
+    display:none;
+    }
+}
 //////Desktop Version//////
 @media screen and (min-width: 1024px){
     #contactCon{
@@ -75,6 +84,15 @@ h1{
         }
         button{
             font-size:18px;
+        }
+    }
+    #contact-page-img{
+        img{
+            display:flex;
+        width:500px;
+        height:700px;
+        margin:0 auto;
+        padding:20px;
         }
     }
     
