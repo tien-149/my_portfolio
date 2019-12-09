@@ -1,0 +1,87 @@
+
+.error-content{ 
+    position: relative;
+    text-align: center;
+    height: 500px;
+
+.error-image{
+    width:100%;
+    display:flex;
+}
+.error-text{
+    position:absolute;
+    text-align: center;
+    left:25%;
+    color:#ffc618;
+}
+.error-message{
+    color:#ffc618;
+}
+.error-show{
+    font-size:28px;
+    margin-top:5px;
+}
+.back-home{
+    color:#d2eddc;
+    border: 1px solid #d2eddc;
+    font-family: "Biko";
+    padding:6px;
+    a{
+      text-decoration: none;
+    }
+}
+
+}
+@media screen and (min-width: 1024px){
+    .error-content{ 
+        position: relative;
+        text-align: center;
+        
+    
+    .error-image{
+        width:100%;
+    }
+    .error-text{
+        position:absolute;
+        padding-top:200px;
+        left:35%;
+        color:#e5ba85;
+    }
+    .error-message{
+        color:#e5ba85;
+        font-size:58px;
+    }
+    .error-show{
+        font-size:68px;
+        margin-top:5px;
+    }
+    .back-home{
+        color:#d2eddc;
+        border: 1px solid #d2eddc;
+        font-family: "Biko";
+        font-size:20px;
+        padding:10px;
+        a{
+          text-decoration: none;
+        }
+    }
+    
+    }
+}
+
+@media screen and (min-width: 768px){
+    .error-text{
+        position:absolute;
+        padding-top:100px;
+        left:35%;
+        color:#e5ba85;
+    }
+    .error-message{
+        color:#e5ba85;
+        font-size:58px;
+    }
+    .error-show{
+        font-size:68px;
+        margin-top:5px;
+    }
+}

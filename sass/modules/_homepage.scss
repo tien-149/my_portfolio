@@ -119,6 +119,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     h1{
         font-family: $main-font;
         color:#003300;
@@ -139,6 +140,9 @@
         height:160px;
         background-color:black;
         padding:10px;
+        margin: 0 auto;
+    }
+    .youtube-video{
         margin: 0 auto;
     }
 }
