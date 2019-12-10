@@ -88,12 +88,33 @@ h1{
     }
     #contact-page-img{
         img{
-            display:flex;
+        display:flex;
+         position: relative;
         width:500px;
         height:700px;
         margin:0 auto;
         padding:20px;
+        
         }
+        .alien-mail{
+            -webkit-animation-name: mailman; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation-name: mailman;
+            animation-duration: 2s;
+        }
+        @-webkit-keyframes mailman {
+            0%   { left:1000px; top:0px;}
+            100%  {left:0px; top:0px;}
+
+          }
+          
+          /* Standard syntax */
+          @keyframes mailman {
+            0%   {left:1000px; top:0px;}
+            100%  { left:0px; top:0px;}
+
+          }
+        
     }
     
 }

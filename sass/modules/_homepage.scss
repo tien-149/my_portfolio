@@ -71,7 +71,7 @@
         padding: 10px;
     }
 }
-    .web-img{
+    .web-img1{
         width:300px;
         height:240px;
         padding:10px;
@@ -104,9 +104,9 @@
         padding: 10px;
     }
 }
-    .web-img{
-        width:300px;
-        height:240px;
+    .web-img2{
+        width:500px;
+        height:400px;
         padding:10px;
         margin: 0 auto;
 
@@ -144,6 +144,8 @@
     }
     .youtube-video{
         margin: 0 auto;
+        width:80%;
+
     }
 }
 
@@ -164,7 +166,9 @@
         position: absolute;
         padding-top:50px;
         
+        
     }
+
     .hero{
         display:flex;
         flex-direction:column;      
@@ -215,15 +219,53 @@
         flex-direction: row;
         justify-content: center;
         margin-top:50px;
-    
-        .web-img{
+
+        :hover{
+            background-color:$mainfont-color;
+            
+        }
+        .web-img1{
             width:500px;
             height:360px;
-            padding:30px;
+            padding:100px;
             padding-top:60px;
             margin: 0 auto;
-    
+            -webkit-animation-name: fadeRight; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation-name: fadeRight;
+            animation-duration: 4s ;
+           
         }
+        @-webkit-keyframes fadeRight {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0);
+              }
+            
+              to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+              }
+          }
+          
+          /* Standard syntax */
+          @keyframes fadeRight {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0);
+              }
+            
+              to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+              }
+          }
+        
+          
 
     .graphic-text{
         width:700px;
@@ -256,6 +298,10 @@
         flex-direction: row-reverse;
         justify-content: center;
         margin-top:50px;
+        
+        :hover{
+            background-color: $main-color;
+        }
         .graphic-icon{
             padding-top:40px;
             width:60px;
@@ -275,14 +321,47 @@
             font-size:20px;
             padding: 10px;
         }
-        .web-img{
-            width:500px;
-            height:360px;
+        .web-img2{
+            width:800px;
+            height:560px;
             padding:30px;
             padding-top:60px;
             margin: 0 auto;
-    
+            -webkit-animation-name: fadeleft; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            animation-name: fadeleft;
+            animation-duration: 4s;
+
         }
+        @-webkit-keyframes fadeleft {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+              }
+            
+              to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+              }
+          }
+          
+          /* Standard syntax */
+          @keyframes fadeleft {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+              }
+            
+              to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+              }
+          }
+
 
     .graphic-text{
         width:700px;
@@ -291,5 +370,14 @@
     }
     
     }
+    #video{
+    .youtube-video{
+        margin: 0 auto;
+        width:1000px;
+        height:700px;
+
+    }
+}
+    
 
 }
