@@ -34,12 +34,12 @@ router.get("/contact", (req, res) => {
 router.get('/work', (req, res) => {
 
   // get the connection via the connection pool, and then run the query -> just one added step
-  mysql.getConnection((err, connection) => {
+  sql.getConnection((err, connection) => {
   if (err) { return console.log(error.message); }
 
   let query = "SELECT * FROM tbl_work";
 
-  mysql.query(query, (err, result) => {
+  sql.query(query, (err, result) => {
     connection.release(); // send this connection back to the pool
 
     if (err) {
